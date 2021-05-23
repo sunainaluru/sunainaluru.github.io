@@ -20,9 +20,11 @@
  .about {
     display: flex;
     flex-wrap: wrap;
+    background-color: aliceblue;
+    font: 1em sans-serif;
  }
  
- .about > section {
+ /* .about > section {
     display: flex;
     flex: 0 0 33.33%;
     min-height: 120px;
@@ -33,15 +35,12 @@
     width: 100%;
     margin: 15px;
  }
- 
+  */
  .about > section p {
     margin: 8px 0px 25px 8px;
     font-weight: 600;
  }
  
- .about > section img {
-    width: 100%;
- }
  
  .work {
     display: flex;

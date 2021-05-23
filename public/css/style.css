@@ -1,0 +1,95 @@
+/*************************/
+/* Miscellaneous Styling */
+/*************************/
+
+* {
+    box-sizing: border-box;
+ }
+ html,
+ body {
+    margin: 0px;
+    padding: 5px;
+    font-family: Arial;
+ }
+ 
+ p, span, i {
+    margin: 3px 0px 0px 0px;
+    font-size: 0.9em;
+ }
+ 
+ .about {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+ .about > section {
+    display: flex;
+    flex: 0 0 33.33%;
+    min-height: 120px;
+ }
+ 
+ .about > section div {
+    border: solid 1px #CCC;
+    width: 100%;
+    margin: 15px;
+ }
+ 
+ .about > section p {
+    margin: 8px 0px 25px 8px;
+    font-weight: 600;
+ }
+ 
+ .about > section img {
+    width: 100%;
+ }
+ 
+ .work {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px #CCC;
+ }
+ 
+ .work > section {
+    display: flex;
+    padding: 2px;
+    border-top: solid 1px #CCC;
+    border-left: solid 1px #CCC;
+    border-right: solid 1px #CCC;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .work div {
+     display: flex;
+     align-items: center;
+ }
+ .work span, .container-2 p, .container-2 i, .container-2 img {
+    margin-right: 5px;
+ }
+ 
+ .fas, span {
+    color: #999;
+    cursor: pointer;
+ }
+ .fas:hover {
+    color: #6B9E71;
+ }
+ 
+ 
+ @media screen and (max-width: 1000px) and (min-width: 500px) {
+    .container-1 > section {
+       flex: 0 0 50%;
+    }
+ }
+ 
+ 
+ @media screen and (max-width: 499px) and (min-width: 0px) {
+    .container-1 > section {
+       flex: 0 0 66%;
+    }
+    .container-1 > section div {
+       border: none;
+    }
+    .container-2 > section img {
+       display: none;
+    }
+ }

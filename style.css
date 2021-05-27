@@ -1,94 +1,95 @@
-/*************************/
-/* Miscellaneous Styling */
-/*************************/
+body * {
+   width: 100%;
+   box-sizing: border-box;
+   font-family: 'Arial';
+}
+body {
+   margin: 0;
+}
+.container {
+   color: aliceblue;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 5fr 5fr;
+   grid-row-gap: 50px;
+   grid-column-gap: 40px;
+   grid-template-areas:
+      "a . . b c d e"
+      "f f f f f f f"
+      "g g g g g g g";
+   min-height: 100vh;
+}
+nav, main {
+   display: flex;
+   /* justify-content: center;
+   align-items: center; */
+}
 
-* {
-    box-sizing: border-box;
- }
- html,
- body {
-    margin: 0px;
-    padding: 5px;
-    font-family: Arial;
- }
- 
- p, span, i {
-    margin: 3px 0px 0px 0px;
-    font-size: 0.9em;
- }
- 
- .about {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: aliceblue;
-    font: 1em sans-serif;
- }
- 
- /* .about > section {
-    display: flex;
-    flex: 0 0 33.33%;
-    min-height: 120px;
- }
- 
- .about > section div {
-    border: solid 1px #CCC;
-    width: 100%;
-    margin: 15px;
- }
-  */
- .about > section p {
-    margin: 8px 0px 25px 8px;
-    font-weight: 600;
- }
- 
- 
- .work {
-    display: flex;
-    flex-direction: column;
-    border-bottom: solid 1px #CCC;
- }
- 
- .work > section {
-    display: flex;
-    padding: 2px;
-    border-top: solid 1px #CCC;
-    border-left: solid 1px #CCC;
-    border-right: solid 1px #CCC;
-    align-items: center;
-    justify-content: space-between;
- }
- .work div {
-     display: flex;
-     align-items: center;
- }
- .work span, .container-2 p, .container-2 i, .container-2 img {
-    margin-right: 5px;
- }
- 
- .fas, span {
-    color: #999;
-    cursor: pointer;
- }
- .fas:hover {
-    color: #6B9E71;
- }
- 
- 
- @media screen and (max-width: 1000px) and (min-width: 500px) {
-    .container-1 > section {
-       flex: 0 0 50%;
-    }
- }
- 
- 
- @media screen and (max-width: 499px) and (min-width: 0px) {
-    .container-1 > section {
-       flex: 0 0 66%;
-    }
-    .container-1 > section div {
-       border: none;
-    }
-    .container-2 > section img {
-       display: none;
-    }
- }
+/* top menu */
+.menu{ background: skyblue }
+.menu1{
+   grid-area: a;
+
+}
+.menu2{
+   grid-area: b;
+
+}
+.menu3{
+   grid-area: c;
+
+}
+/* .section{
+   grid-area: c;
+   background: gray;
+} */
+
+
+/* attempt at changing the media query for less than 600 px */
+/* couldn't figure out why sidebar, "f" kept showing up :( */
+@media screen and (max-width: 768px) {
+   .container {
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 2fr 2fr;
+      grid-template-areas:
+         "a ."
+         "b b"
+         "c c"
+         "d d"
+         "e e";
+   }
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+   .container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1.5fr 2fr 5fr 5fr 5fr;
+      grid-template-areas:
+         "a b"
+         "f f"
+         "c d"
+         "e e"
+         "g g";
+   }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 0px) {
+   .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1.5fr 2fr 5fr 5fr 5fr 5fr;
+      grid-template-areas:
+         "a"
+         "b"
+         "c"
+         "d"
+         "e"
+         "g";
+   }
+   .aside {
+      display: none;
+   }
+}
+

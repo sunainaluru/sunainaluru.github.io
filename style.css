@@ -1,53 +1,118 @@
 body * {
    width: 100%;
-   box-sizing: border-box;
-   font-family: 'Arial';
+   /* //box-sizing: border-box; */
 }
 body {
    margin: 0;
 }
-.container {
-   color: aliceblue;
+.nav {
+   background-color: aliceblue;
+}
+/* .container {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-   grid-template-rows: 1fr 5fr 5fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
    grid-row-gap: 50px;
    grid-column-gap: 40px;
    grid-template-areas:
-      "a . . b c d e"
-      "f f f f f f f"
-      "g g g g g g g";
+      "a b c d"
+      "e f g h"
+      "i j k l"; 
    min-height: 100vh;
-}
-nav, main {
+} */
+main {
    display: flex;
    /* justify-content: center;
    align-items: center; */
 }
-
-/* top menu */
-.menu{ background: skyblue }
-.menu1{
+ul {
+   width: 100%;
+   height: 20%;
+   list-style-type: none;
+   margin: 0px;
+   padding: 0px;
+   overflow: hidden;
+   position: -webkit-sticky;  /*for safari*/
+   position: sticky;
+   top: 0;
+   background-color: aliceblue;
+   display: inline;
+   border-bottom: solid 10px darkgray;
+}
+ul text{
+   text-align: left;
+   font-size: 40px;
+   font-family: 'Bodoni Moda', serif;
+   background-color: aliceblue;
+   padding-left: 20px;
+   padding-right: 15px;
+}
+ul li {
+   width: auto;
+   text-align: right;
+   float: right;
+   padding: 15px;
+   font-family: 'Abril Fatface', cursive;
+}
+li {
+   float: right;
+   background-color: aliceblue;
+}
+li a {
+   /* font color */
+   color: darkgray; 
+   background-color: aliceblue;
+   text-decoration: none;
+   font-size: 20px;
+}
+li a:hover {
+   background-color: white;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+/* .active {
+   background-color: white;
+ } */
+.about{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-row-gap: 50px;
+   grid-column-gap: 40px;
+   grid-template-areas:
+      "a b"
+      "a c"
+      "a d";
+   min-height: 100vh;
+}
+.about img{
    grid-area: a;
-
+   padding: 15px;
+   width: 400px;
+   height: 400px;
 }
-.menu2{
+.about h1 {
    grid-area: b;
-
+   font-family: 'Abril Fatface';
 }
-.menu3{
+.about p1 {
    grid-area: c;
-
+   font-family: 'Abril Fatface';
+   color: lightslategray;
 }
-/* .section{
-   grid-area: c;
-   background: gray;
-} */
+.about p2 {
+   grid-area: d;
+   font-family: 'Abril Fatface';
+   color: lightslategray;
+}
+
+
+
 
 
 /* attempt at changing the media query for less than 600 px */
 /* couldn't figure out why sidebar, "f" kept showing up :( */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
    .container {
       color: white;
       display: grid;
@@ -60,10 +125,10 @@ nav, main {
          "d d"
          "e e";
    }
-}
+} */
 
 
-@media screen and (max-width: 900px) and (min-width: 600px) {
+/* @media screen and (max-width: 900px) and (min-width: 600px) {
    .container {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1.5fr 2fr 5fr 5fr 5fr;
@@ -74,9 +139,9 @@ nav, main {
          "e e"
          "g g";
    }
-}
+} */
 
-@media only screen and (max-width: 500px) and (min-width: 0px) {
+/* @media only screen and (max-width: 500px) and (min-width: 0px) {
    .container {
       grid-template-columns: 1fr;
       grid-template-rows: 1.5fr 2fr 5fr 5fr 5fr 5fr;
@@ -91,5 +156,5 @@ nav, main {
    .aside {
       display: none;
    }
-}
+} */
 

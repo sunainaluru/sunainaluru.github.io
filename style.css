@@ -48,27 +48,25 @@ ul text{
    padding-right: 15px;
 }
 ul li {
+   top: 0;
    width: auto;
    text-align: right;
    float: right;
-   padding: 15px;
+   padding-top: 15px;
+   padding-bottom: 15px;
    font-family: 'Abril Fatface', cursive;
-}
-li {
-   float: right;
    background-color: aliceblue;
 }
 li a {
    /* font color */
    color: darkgray; 
    background-color: aliceblue;
+   padding: 20px;
    text-decoration: none;
    font-size: 20px;
 }
 li a:hover {
    background-color: white;
-   padding-top: 20px;
-   padding-bottom: 20px;
 }
 /* .active {
    background-color: white;
@@ -76,33 +74,32 @@ li a:hover {
 .about{
    display: grid;
    grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr 1fr;
-   grid-row-gap: 50px;
-   grid-column-gap: 40px;
+   grid-template-rows: 1fr 1fr;
+   grid-row-gap: 0px;
+   grid-column-gap: 0px;
    grid-template-areas:
       "a b"
-      "a c"
-      "a d";
+      "a c";
    min-height: 100vh;
 }
-.about img{
+#mepic{
    grid-area: a;
-   padding: 15px;
-   width: 400px;
-   height: 400px;
+   padding-top: 100px;
+   padding-left: 200px;
+   width: 350px;
+   height: 350px;
+   float: right;
 }
 .about h1 {
+   padding-top: 100px;
    grid-area: b;
    font-family: 'Abril Fatface';
 }
-.about p1 {
+.about p{
+   padding: 0px;
    grid-area: c;
-   font-family: 'Abril Fatface';
-   color: lightslategray;
-}
-.about p2 {
-   grid-area: d;
-   font-family: 'Abril Fatface';
+   width: 80%;
+   font-family: 'Montserrat', sans-serif;
    color: lightslategray;
 }
 

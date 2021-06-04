@@ -4,3 +4,4 @@
 - bottom nav bar design
 - get nav bar to stick to the top while scrolling
 - change font in about me body
+- reorganize file structure for resources

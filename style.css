@@ -54,9 +54,10 @@ ul li {
    float: right;
    padding-top: 15px;
    padding-bottom: 15px;
-   font-family: 'Bodoni Moda', serif;
+   font-family: 'Darker Grotesque', sans-serif;
    background-color: #CAD5E3;
-   font-size: 20px;
+   font-size: 23px;
+   font-weight: 500;
 }
 li a {
    /* font color */
@@ -147,7 +148,8 @@ li a:hover {
    font-family: 'Abril Fatface';
 }
 .aboutmeinfo p{
-   padding-top: 20px;
+   padding-top: 25px;
+   font-weight: 300;
    grid-area: b;
    width: 80%;
    font-family: 'Montserrat';

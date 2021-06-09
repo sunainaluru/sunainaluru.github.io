@@ -1,32 +1,18 @@
 body * {
    width: 100%;
-   /* //box-sizing: border-box; */
 }
 body {
    margin: 0;
+   background-color:aliceblue;
 }
 .nav {
    background-color: #CAD5E3;
-   position: -webkit-sticky;  /*for safari*/
-   position: sticky;
+   /* position: -webkit-sticky;  for safari */
+   /* position: sticky; */
+   position: fixed;
+   top: 0;
+   z-index: 5;
 }
-/* .container {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: 1fr 1fr 1fr;
-   grid-row-gap: 50px;
-   grid-column-gap: 40px;
-   grid-template-areas:
-      "a b c d"
-      "e f g h"
-      "i j k l"; 
-   min-height: 100vh;
-} */
-/* main {
-   display: flex;
-   /* justify-content: center;
-   align-items: center;
-} */
 ul {
    width: 100%;
    height: 20%;
@@ -91,9 +77,15 @@ li a:hover {
      transform: translateX(0);
    }
 }
+/* .aboutborder {
+   border-bottom: 5px solid lightslategray;
+   margin-left: 300px;
+   width: 600px;
+} */
 
 .about{
    /* TO DO: CHANGE GRID TO CENTER WITHOUT PIXEL PADDINGS */
+   margin-top: 100px;
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 0.25fr;
@@ -101,7 +93,7 @@ li a:hover {
    grid-column-gap: 0px;
    grid-template-areas:
       "a b";
-   min-height: 100vh;
+   /* min-height: 100vh; */
    background-color: aliceblue;
 }
 .aboutmecard{
@@ -158,6 +150,7 @@ li a:hover {
 
 
 .resume{
+   margin-top: 100px;
    display: grid;
    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
    grid-template-rows: 0.15fr 0.25fr;
@@ -166,26 +159,23 @@ li a:hover {
    grid-template-areas:
       "a . c ."
       ". b b .";
-   min-height: 100vh;
    background-color: aliceblue;
+   margin-bottom: 100px;
 }
 .resume h2 {
    padding-left: 200px;
-   /* padding-top: 100px; */
    grid-area: a;
    font-family: 'Abril Fatface';
    font-size: 30px;
 }
 .resume p {
    padding-left: 100px;
-   /* padding-top: 115px; */
    grid-area: c;
    font-family: 'Montserrat';
    color: lightslategray;
    font-size: 30px;
 }
 .rbutton {
-   /* padding-top: 50px; */
    text-decoration: none;
    margin-left: 100px;
    grid-area: b;
@@ -193,7 +183,7 @@ li a:hover {
    height: 50px;
 }
 .rbutton:hover {
-   transform: scale(1.25);
+   transform: scale(1.15);
    background-color: white;
 }
 .button {
@@ -205,6 +195,73 @@ li a:hover {
    height: 75px;
    box-shadow: -10px 10px 10px 8px rgba(0, 0, 0, 0.08);
 }
+
+.work {
+   display: grid;
+   grid-template-columns: 0.5fr 0.5fr;
+   grid-template-rows: 0.15fr 0.25fr;
+   grid-row-gap: 0px;
+   grid-column-gap: 0px;
+   grid-template-areas:
+      "a ."
+      "c b";
+   background-color: aliceblue;
+   padding-bottom: 50px;
+}
+.worktitle {
+   padding-left: 200px;
+   grid-area: a;
+   font-family: 'Abril Fatface';
+   font-size: 30px;
+   color: black;
+   padding-bottom: 50px;
+}
+.work > a{
+   width: 300px;
+   background-color: #F4F5F6;
+   margin-bottom: 50px;
+   color: #5F83AB;
+   box-shadow: -10px 10px 10px 8px rgba(0, 0, 0, 0.08);
+   text-decoration: none;
+}
+.text {
+   margin-left: 30px;
+}
+.title{
+   font-family: 'Abril Fatface';
+   font-size: 25px;
+}
+.tech, .apis, .desc{
+   font-family: 'Darker Grotesque', sans-serif;
+   font-size: 20px;
+}
+.pc {
+   grid-area: c;
+   margin-left: 300px;
+   height: 430px;
+}
+.this {
+   grid-area: b;
+   height: 350px;
+}
+.this:hover {
+   transform: scale(1.10);
+}
+.pc:hover {
+   transform: scale(1.10);
+}
+
+
+/* .where {
+   display: inline;
+}
+.what {
+   display: inline-block;
+   border-radius: 3px;
+}
+.when {
+   float: right;
+} */
 
 
 

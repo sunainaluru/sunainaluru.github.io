@@ -1,7 +1,7 @@
-- Animation for resume while scrolling
-- animation for experience while scrolling
 - active properly highlighted for nav bar
 - bottom nav bar design
-- get nav bar to stick to the top while scrolling
-- change font in about me body
 - reorganize file structure for resources
+- contact me widget
+- change tab icon
+- add a my photography section?
+- make website mobile/different size responsive!!!!

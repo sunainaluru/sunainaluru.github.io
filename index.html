@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-30092SLL2W"></script>
   <script>
@@ -46,23 +47,58 @@
           <br>
           Some technologies I am experienced in and passionate about include Golang, Python, and GraphQL. Please reach out to me to learn more about my experience and if you would like to work with me!</p>
       </div>
-    
+      <!-- <div class="aboutborder"></div> -->
     </main>
   
-    <main class="resume" id="resume">
+    <main data-aos= "fade-up" data-aos-duration="3000" class="resume" id="resume">
       <h2>my work experience</h2>
       <p> Feel free to take a peek at my resume. </p>
       <a class="rbutton" href="resume.pdf" target="_blank"> <button class="button"> download my resume</button> </a>
-      <!-- <div class="bar">
-        <li>element 1</li>
-        <li>element 2</li>
-        <li>element 3</li>
-        <li>element 4</li>
-        <li>element 5</li>
-      </div> -->
+    </main>
+
+    <main data-aos= "fade-right" data-aos-duration="3000" class="work" id="work">
+      <h2 class="worktitle"> my work </h2>
+      <a class="pc" href="https://github.com/sunainaluru/PATIENTCONNECT" target="_blank">
+        <div class="text">
+          <h4 class="title">patientconnect</h4>
+          <h6 class="tech">JS, Jinja, jQuery, HTML, CSS
+            <br>
+            Python, Flask, SQLAlchemy, 
+            <br>
+            PostgreSQL, AWS LightSail</h6>
+          <h7 class="apis">ClinicalTrials.gov, GoogleMaps</h7>
+          <br>
+          <br>
+          <h8 class="desc">A full stack web application to 
+            <br> 
+            search for currently active/enrolling
+            <br>
+             clinical trials by medical condition 
+             <br>
+             or zip code.</h8>
+        </div>
+      </a>
+
+      <a class="this" href="https://github.com/sunainaluru/sunainaluru.github.io" target="_blank">
+        <div class="text">
+          <h4 class="title">this portfolio website</h4>
+          <h6 class="tech">HTML, CSS</h6>
+          <h7 class="apis">Google Analytics</h7>
+          <br>
+          <br>
+          <h8 class="desc">A portfolio website built with 
+            <br>
+            animation, HTML, CSS, and 
+            <br>
+            Google Analytics site tracking.</h8>
+        </div>
+      </a>
     </main>
 
   </div>
-    
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

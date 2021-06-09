@@ -1,6 +1,2 @@
-- active properly highlighted for nav bar
-- bottom nav bar design
-- reorganize file structure for resources
-- contact me widget
 - change tab icon
 - make website mobile/different size responsive!!!!

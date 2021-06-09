@@ -4,6 +4,7 @@ body * {
 body {
    margin: 0;
    background-color:aliceblue;
+   position: absolute;
 }
 .nav {
    background-color: #CAD5E3;
@@ -52,10 +53,10 @@ li a {
    padding: 15px;
    text-decoration: none;
 }
-li a:hover {
+ul li:hover a{
    background-color: white;
 }
-/* .active {
+/* ul li:active a{
    background-color: white;
  } */
 
@@ -85,7 +86,7 @@ li a:hover {
 
 .about{
    /* TO DO: CHANGE GRID TO CENTER WITHOUT PIXEL PADDINGS */
-   margin-top: 100px;
+   padding-top: 100px;
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 0.25fr;
@@ -150,7 +151,7 @@ li a:hover {
 
 
 .resume{
-   margin-top: 100px;
+   padding-top: 100px;
    display: grid;
    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
    grid-template-rows: 0.15fr 0.25fr;
@@ -160,7 +161,7 @@ li a:hover {
       "a . c ."
       ". b b .";
    background-color: aliceblue;
-   margin-bottom: 100px;
+   margin-bottom: 50px;
 }
 .resume h2 {
    padding-left: 200px;
@@ -197,6 +198,7 @@ li a:hover {
 }
 
 .work {
+   padding-top: 50px;
    display: grid;
    grid-template-columns: 0.5fr 0.5fr;
    grid-template-rows: 0.15fr 0.25fr;
@@ -250,19 +252,101 @@ li a:hover {
 .pc:hover {
    transform: scale(1.10);
 }
-
-
-/* .where {
-   display: inline;
+.bottomnav {
+   display: grid;
+   grid-template-columns: 0.5fr 0.5fr;
+   grid-template-rows: 0.05fr;
+   grid-row-gap: 0px;
+   grid-column-gap: 0px;
+   grid-template-areas:
+      "a b";
+   background-color: #EEF4FC;
+   height: 40px;
+   position: absolute;
+   bottom: 0;
+   z-index: 9999;
+   font-family: 'Darker Grotesque', sans-serif;;
+   font-size: 20px;
+   border-top: lightslategray 5px solid;
+   color: black;
 }
-.what {
-   display: inline-block;
-   border-radius: 3px;
+.copy {
+   grid-area: a;
+   margin-left: 10px;
 }
-.when {
-   float: right;
-} */
+.contact {
+   grid-area: b;
+   text-align: right;
+   margin-right: 15px;
+}
 
+.modal {
+   display: grid;
+   grid-template-columns: 0.5fr 0.5fr 0.5fr;
+   grid-template-rows: 0.5fr 0.5fr;
+   grid-row-gap: 0px;
+   grid-column-gap: 0px;
+   grid-template-areas:
+      "a a a"
+      "b c d";
+   position: fixed;
+   right: 10px;
+   bottom: 80px;
+   z-index: 20;
+   width: 275px;
+   height: 125px;
+   border-radius: 25px;
+   box-shadow: -10px 10px 10px 8px rgba(0, 0, 0, 0.08);
+   background-color: #FFFFFA;
+}
+.modal::after {
+   content: '';
+   position: absolute;
+   visibility: visible;
+   top: 0px;
+   right: -8px;
+   border: 20px solid transparent;
+   border-top: 30px solid #FFFFFA;
+   clear: both;
+ }
+ .contactmodal{
+    grid-area: a;
+    font-family: 'Abril Fatface';
+    margin: 0px;
+    margin-left: 75px;
+    margin-top: 10px;
+    font-size: 25px;
+    color: black;
+ }
+.gmailbutton {   
+   grid-area: b;
+   height: 40px;
+   width: 55px;
+   margin-left:35px;
+}
+.gmailbutton:hover {
+   transform: scale(1.10);
+}
+.inbutton {
+   grid-area: c;
+   height: 70px;
+   width: 70px;
+   margin-top:-13px;
+   margin-left: 15px;
+}
+.inbutton:hover{
+   transform: scale(1.10);
+}
+.gitbutton {
+   grid-area: d;
+   height:50px;
+   width: 50px;
+   margin-top: -4px;
+   margin-left: 10px;
+}
+.gitbutton:hover{
+   transform: scale(1.10);
+}
 
 
 /* attempt at changing the media query for less than 600 px */

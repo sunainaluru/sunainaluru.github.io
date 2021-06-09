@@ -1,2 +1,0 @@
-- change tab icon
-- make website mobile/different size responsive!!!!

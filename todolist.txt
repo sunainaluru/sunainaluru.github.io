@@ -3,5 +3,4 @@
 - reorganize file structure for resources
 - contact me widget
 - change tab icon
-- add a my photography section?
 - make website mobile/different size responsive!!!!
